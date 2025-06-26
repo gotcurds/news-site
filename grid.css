@@ -1,4 +1,4 @@
-.blog-layout {
+.bog-layout {
     background-color: rgba(78, 45, 210, 0.208);
     padding: 20px;
     display: grid;
@@ -14,11 +14,8 @@
     min-height: 100vh;
 }
 
-#news {
-    width: 10vh;
-    height: 30vh;
-   object-fit: contain;
-}
+
+
 
 .container-fluid {
     display: flex;
@@ -28,11 +25,16 @@
     margin-bottom: -4.5%;
 }
 .site-header {
-    background-image: url(./news.avif);
+    height: 10vh;
+    width: auto;
+    object-fit: cover;
+    background-image: url(fractal.jpg);
+    background-position: 10% 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     padding: 20px;
     border-radius: 20px;
     grid-area: header;
-     brder: 4px solid rgba(160, 252, 11, 0.776);
+     border: 4px solid rgba(160, 252, 11, 0.776);
      display: flex;
      align-items: flex-end;
 }
