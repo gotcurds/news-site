@@ -6,7 +6,7 @@
     grid-template-areas:
     "header header header"
     "main main aside"
-    "comments comments aside"
+    "section section aside"
     "footer footer footer"
     ;
     gap: 20px;
@@ -97,17 +97,12 @@
 
 .sidebar {
     grid-area: aside;
-     border: 4px solid rgba(160, 252, 11, 0.776);
+     border: 4px solid rgba(252, 11, 11, 0.776);
 }
 
 .comments {
     grid-area: section;
-     border: 4px solid rgba(160, 252, 11, 0.776);
-}
-
-#category {
-    display: flex;
-    margin-left: 12%;
+     border: 4px solid rgba(75, 11, 252, 0.776);
 }
 
 /* just in case */
@@ -129,11 +124,11 @@
     gap: 10px;
     width: 550px;
     border-radius: 10px;
-    margin: auto;
+    margin: right;
     padding: 10px;
 }
 
-.comment {
+.comment-container {
      background-color: rgb(78, 45, 210);
     display: grid;
     grid-template-rows: 1fr;
@@ -141,6 +136,6 @@
     gap: 70px;
     width: 740px;
     border-radius: 10px;
-    margin-left: 2%;
-    padding: 5px;
+    margin: left;
+    padding: 10px;
 }
