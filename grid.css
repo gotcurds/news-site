@@ -20,10 +20,10 @@
 .container-fluid {
     display: flex;
     margin-right: -71%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 14px;
+box-shadow: rgb(178, 17, 15) 0px -23px 25px 0px inset, rgb(45, 4, 2) 0px -36px 30px 0px inset, rgb(23, 8, 3) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    border-radius: 14px;
     margin-bottom: -4.5%;
 }
+
 .site-header {
     height: 10vh;
     width: auto;
@@ -32,12 +32,64 @@
     background-position: 10% 30%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     grid-area: header;
      border: 4px solid rgba(160, 252, 11, 0.776);
      display: flex;
      align-items: flex-end;
 }
+
+/* hover ??? */
+
+.liquid-morph-element {
+  width: auto;
+  height: auto;
+  background: #D33936;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.liquid-morph-element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+   #B52B28 0deg, 
+    #170803 120deg, 
+    #B2110F 240deg
+  );
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.liquid-morph-element:hover {
+  border-radius: 10px;
+  transform: rotate(15deg);
+  color: #fff;
+  border-color: #E27B79;
+}
+
+.liquid-morph-element:hover::before {
+  opacity: 0.5;
+  transform: scale(2);
+}
+
+/* end hover?? */
+
+.btn {
+    border-color: #6e0a07;
+    color: rgb(32, 32, 32);
+}
+
 
 
 .main-content {
