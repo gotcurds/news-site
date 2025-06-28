@@ -26,7 +26,7 @@
     height: 15vh;
     width: auto;
     object-fit: cover;
-    background-image: url(fractal.jpg);
+    background-image: url(asset/fractal.jpg);
     background-position: 10% 30%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     padding: 20px;
